@@ -5,9 +5,12 @@ class window.Hand extends Backbone.Collection
 
   hit: ->
     @add(@deck.pop())
+    if @scores()[0] > 21 and !@isDealer
+      @trigger('bust', @)
 
   stand: ->
     if @isDealer
+      @at(0).flip()
       @hit() while @scores()[0] < 17
 
 
