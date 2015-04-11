@@ -1,3 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper {
+  background-color: rgb(158, 44, 44);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.buttons {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.buttons button {
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .card {
   float: left;
   border: solid 1px black;
@@ -9,6 +36,7 @@
 
 .covered {
   background-color: black;
+  color: black;
 }
 
 .hand {
