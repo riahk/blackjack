@@ -11,7 +11,6 @@ class window.HandView extends Backbone.View
     @collection.hit()
 
   stand: ->
-    console.log @collection
     @collection.stand()
 
   render: ->

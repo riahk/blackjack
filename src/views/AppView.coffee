@@ -1,6 +1,9 @@
 class window.AppView extends Backbone.View
   template: _.template '
     <div class="result"></div>
+    <div class="reset-button">
+      <button class="reset">Play Again?</button>
+    </div>
     <div class="dealer-hand-container"></div>
     <div class="player-hand-container"></div>
     <div class="buttons"><button class="hit-button">Hit</button>
@@ -22,15 +25,19 @@ class window.AppView extends Backbone.View
     @model.on 'win', ->
       $('.result').html('<h1 class="win">You win!</h1 >')
       $('.buttons').hide()
+      $('.reset-button').show()
     @model.on 'lose', ->
       $('.result').html('<h1 class="lose">You lose!</h1 >')
       $('.buttons').hide()
+      $('.reset-button').show()
     @model.on 'tie', ->
       $('.result').html('<h1 class="tie">You tie!</h1 >')
       $('.buttons').hide()
+      $('.reset-button').show()
     @model.on 'printBust', ->
       $('.result').html('<h1 class="lose">You lose!</h1 >')
       $('.buttons').hide()
+      $('.reset-button').show()
     @render()
 
 

@@ -11,12 +11,16 @@ body {
   padding: 20px;
 }
 
+.reset-button{
+  display: none;
+}
+
 .buttons {
   font-size: 30px;
   margin: 5px;
 }
 
-.buttons button {
+button {
   background-color: black;
   color: white;
   border-style: none;
@@ -35,7 +39,7 @@ body {
 }
 
 .covered {
-  background-color: black;
+  content: url('/Users/HR10/2015-03-blackjack/img/card-back.png');
   color: black;
 }
 

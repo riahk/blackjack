@@ -8,7 +8,6 @@ class window.App extends Backbone.Model
     @set 'dealerHand', deck.dealDealer()
     @get('playerHand').on 'bust', ->
       thiz.trigger('printBust', thiz)
-      console.log(thiz)
 
   compareScores: ->
     dealerScore = @get('dealerHand').scores()
